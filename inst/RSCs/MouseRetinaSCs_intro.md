@@ -1,1 +1,1 @@
-MouseRetinaSCs: You can add to this preamble by editting D:/Dropbox/GDB/BrendaRetina/code_outputs/v3/MouseRetinaSCs_intro.md
+MouseRetinaSCs from the VdK lab. Data portal by [scClustViz](https://baderlab.github.io/scClustViz).  
