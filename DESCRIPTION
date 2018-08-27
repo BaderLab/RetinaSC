@@ -1,0 +1,16 @@
+Package: RetinaSC
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Date: 2018-08-26
+Author: Who wrote it
+Maintainer: Brendan T Innes <brendan.innes@mail.utoronto.ca>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Suggests: org.Hs.eg.db
+Imports: scClustViz
+Remotes: BaderLab/scClustViz
+RoxygenNote: 6.1.0
