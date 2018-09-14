@@ -18,8 +18,13 @@
 #'
 #' @export
 
-viewRetinaSC <- function(outPath="./") {
-  filePath <- system.file("RSCs/MouseRetinaSCs.RData",package="RetinaSC")
+viewRetinaSC <- function(dataSet,outPath="./") {
+  if (!dataSet %in% c("All","RSCsOnly")) {
+    stop("dataSet must be one of: 'All' or 'RSCsOnly'")
+  }
+  filePath <- switch(dataSet,
+                     All=system.file("RSCs/MouseRetinaSCs.RData",package="RetinaSC"),
+                     RSCsOnly=system.file("RSCsOnly/MouseRetinaRSCsOnly.RData",package="RetinaSC"))
   cellMarkers <- list()
 
   if (require("org.Mm.eg.db",quietly=T)) {

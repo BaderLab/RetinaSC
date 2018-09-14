@@ -1,16 +1,16 @@
 Package: RetinaSC
 Type: Package
 Title: vdK lab retinal stem cells
-Version: 0.2.0
+Version: 0.3.0
 Date: 2018-08-26
 Author: Brenda Coles-Takabe 
 Maintainer: Brendan T Innes <brendan.innes@mail.utoronto.ca>
 Description: Something something
     Retinal stem cells.
-License: What license is it under?
+License: MIT + License
 Encoding: UTF-8
 LazyData: true
-Suggests: org.Hs.eg.db
+Suggests: org.Mm.eg.db
 Imports: scClustViz
 Remotes: BaderLab/scClustViz
 RoxygenNote: 6.1.0
