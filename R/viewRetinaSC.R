@@ -3,6 +3,8 @@
 #' A wrapper function to view the \code{HumanLiver} dataset in the
 #' \code{scClustViz} Shiny app.
 #'
+#' @param dataSet One of \code{"All"} or \code{"RSCsOnly"} for the full dataset
+#'   or the subset of predicted retinal stem cell clusters respectively.
 #' @param outPath Default = "./" (the working directory). Specify the directory
 #'   used to save/load any analysis files you generate while exploring the
 #'   \code{HumanLiver} data.
@@ -11,7 +13,9 @@
 #'   seperate window.
 #'
 #' @examples
-#'   viewRetinaSC()
+#' \dontrun{
+#'   viewRetinaSC("All")
+#' }
 #'
 #' @seealso \url{https://baderlab.github.io/scClustViz} for information on
 #'   \code{scClustViz}.
