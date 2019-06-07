@@ -32,11 +32,12 @@
 
 viewRetinaSC <- function(dataSet,outPath="./",imageFileType="pdf",...) {
   if (!dataSet %in% c("All","RSCsOnly")) {
-    stop("dataSet must be one of: 'All' or 'RSCsOnly'")
+    stop("dataSet must be one of: 'All','RSCsOnly','RSCs24'")
   }
   filePath <- switch(dataSet,
                      All=system.file("RSCs/MouseRetinaSCs.RData",package="RetinaSC"),
-                     RSCsOnly=system.file("RSCsOnly/MouseRetinaRSCsOnly.RData",package="RetinaSC"))
+                     RSCsOnly=system.file("RSCsOnly/MouseRetinaRSCsOnly.RData",package="RetinaSC"),
+                     RSCs24=system.file("RSCs24/MouseRSCs24.RData",package="RetinaSC"))
   cellMarkers <- list()
 
   if (require("org.Mm.eg.db",quietly=T)) {
