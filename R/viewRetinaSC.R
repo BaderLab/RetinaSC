@@ -30,7 +30,7 @@
 #'
 #' @export
 
-viewRetinaSC <- function(dataSet,outPath="./",imageFileType="pdf",...) {
+viewRetinaSC <- function(dataSet="All",outPath="./",imageFileType="tiff",...) {
   if (!dataSet %in% c("All","RSCsOnly","RSCs24")) {
     stop("dataSet must be one of: 'All','RSCsOnly','RSCs24'")
   }

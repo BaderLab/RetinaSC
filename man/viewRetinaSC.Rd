@@ -4,7 +4,7 @@
 \alias{viewRetinaSC}
 \title{View HumanLiver data in the scClustViz Shiny app}
 \usage{
-viewRetinaSC(dataSet, outPath = "./")
+viewRetinaSC(dataSet = "All", outPath = "./", imageFileType = "tiff", ...)
 }
 \arguments{
 \item{dataSet}{One of \code{"All"} or \code{"RSCsOnly"} for the full dataset
@@ -13,6 +13,16 @@ or the subset of predicted retinal stem cell clusters respectively.}
 \item{outPath}{Default = "./" (the working directory). Specify the directory
 used to save/load any analysis files you generate while exploring the
 \code{HumanLiver} data.}
+
+\item{imageFileType}{Default="pdf". The file format for saved figures. One of
+\code{"pdf"} (generated with \code{\link[grDevices]{cairo_pdf}}),
+\code{"eps"} (generated with \code{\link[grDevices]{cairo_ps}}),
+\code{"tiff"} (generated with \code{\link[grDevices]{tiff}}), or
+\code{"png"} (generated with \code{\link[grDevices]{png}}).}
+
+\item{...}{Named options that should be passed to the
+\code{\link[shiny]{runApp}} call (these can be any of the following:
+"port", "launch.browser", "host", "quiet", "display.mode" and "test.mode").}
 }
 \value{
 The function causes the scClustViz Shiny GUI app to open in a

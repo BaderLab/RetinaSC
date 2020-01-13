@@ -1,8 +1,8 @@
 Package: RetinaSC
 Type: Package
 Title: vdK lab retinal stem cells
-Version: 1.2.0
-Date: 2019-03-26
+Version: 1.3.0
+Date: 2020-01-13
 Author: Brenda Coles-Takabe 
 Maintainer: Brendan T Innes <brendan.innes@mail.utoronto.ca>
 Description: Something something
@@ -14,4 +14,4 @@ Suggests: org.Mm.eg.db
 Imports: scClustViz (>= 1.1.0)
 Depends: Seurat
 Remotes: BaderLab/scClustViz
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
